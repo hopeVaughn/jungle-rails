@@ -51,6 +51,12 @@ gem 'carrierwave'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
+
+group :development, :test do
+  gem "cypress-rails"
+  gem 'database_cleaner-active_record'
+end
+
 group :development, :test do
   gem 'rspec-rails', '~> 5.1'
   gem 'net-smtp', require: false
